@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Projeto com Bulma</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css">
+    <style>
+        .title {
+            color: black;
+            font-size: 25px;
+        }
+        
+        .subtitle {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">Raphael</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Demonstração</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <p class="title">
+                Treinamento para desenvolvimento Web
+            </p>
+            <p class="subtitle">
+                Primeira página
+            </p>
+            <article class="message is-warning">
+                <div class="message-header">
+                    <p>Olá!!</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    Sou o Raphael e esta é a minha primeira página desenvolvida. Pretendo agora seguir com o curso.
+                </div>
+            </article>
+            <div class="field">
+                <label class="label">Nome</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Nome de Usuário</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                    <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+                <p class="help is-success">Este nome de usuário já foi usado</p>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                    <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">Este e-mail é inválido</p>
+            </div>
+
+            <div class="field">
+                <label class="label">Assunto</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                      <option>Selecione</option>
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                      <option>Opção 4</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Mensagem</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                    <input type="checkbox">
+                    Eu concordo com <a href="#">os termos e condições</a>
+                  </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="radio">
+                    <input type="radio" name="question">
+                    Sim
+                  </label>
+                    <label class="radio">
+                    <input type="radio" name="question">
+                    Não
+                  </label>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Enviar</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer class="footer is-warning">
+        <div class="content has-text-centered is-warning">
+            <p>
+                <strong>Uso de Bulma</strong> by <a href="https://jgthms.com">Raphael</a>. Em estudo.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
